@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hồ Ký Ức · Intro</title>
-  <meta name="description" content="Trải nghiệm vào Hồ Ký Ức: phát nhạc nền và giọng dẫn, bước vào hành trình buông bỏ FOMO." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,50 +12,20 @@
 </head>
 <body>
   <div class="bg" aria-hidden="true"></div>
-
-  <main class="center" role="main">
-    <section class="card" aria-label="Giới thiệu hồ">
-      <span class="badge">HỒ KÝ ỨC · INTRO</span>
-      <h1>Chậm lại trước mặt hồ</h1>
-      <p class="lead">Nhạc nền dịu & giọng dẫn sẽ phát sau khi bạn nhấn nút bắt đầu.</p>
-      <div class="prose">
-        <p>Âm thanh xung quanh dần lắng xuống. Một làn gió nhẹ khẽ chạm vào mặt nước, tạo thành những vòng tròn loang ra vô tận.</p>
-        <p>Bạn đang đứng trước <b>Hồ Ký Ức</b> — nơi người ta thả xuống những điều từng khiến tim mình nặng nề.</p>
-        <p>Mặt nước trong như trí nhớ, phản chiếu lại những điều chưa buông. Ở đây, không ai phán xét. Không cần cố quên, chỉ cần <i>nhìn lại một lần cuối, rồi thả đi</i>.</p>
-        <p>Khi bạn sẵn sàng, hãy bước vào — nhạc sẽ mở, giọng sẽ dẫn lối.</p>
-      </div>
-
+  <main class="center">
+    <div class="hero">
+      <h1>Chào mừng bạn đến với <span style="white-space:nowrap">Hồ Ký Ức</span></h1>
+      <p class="lead">Nhấn bắt đầu để mở nhạc nền & giọng dẫn. Hít sâu, rồi thả lỏng.</p>
       <div class="controls">
-        <button class="primary startBtn">Bắt đầu lắng nghe</button>
-        <button class="toggleMusic">Tạm dừng / Tiếp tục nhạc</button>
-        <button class="replayVoice">Nghe lại giọng dẫn</button>
+        <button class="startBtn">Bắt đầu</button>
+        <button class="toggleMusic">Tạm dừng/Phát nhạc</button>
+        <button class="replayVoice">Nghe lại giọng</button>
         <label>Nhạc <input class="range musicVol" type="range" min="0" max="1" step="0.01" value="0.35"></label>
         <label>Giọng <input class="range voiceVol" type="range" min="0" max="1" step="0.01" value="0.9"></label>
       </div>
-
-      <div class="footer">
-        <div>🎧 Khuyến nghị đeo tai nghe · <span class="small">Bản demo chạy hoàn toàn tĩnh.</span></div>
-        <div class="small">Ảnh nền: hồ minh họa do bạn cung cấp. Âm thanh được phát khi có thao tác của bạn theo chính sách trình duyệt.</div>
-      </div>
-
-      <details class="caption">
-        <summary>Transcript giọng dẫn</summary>
-        <p>Âm thanh xung quanh dần lắng xuống. Một làn gió nhẹ khẽ chạm vào mặt nước, tạo thành những vòng tròn loang ra vô tận.<br/><br/>Bạn đang đứng trước Hồ Ký Ức — nơi người ta thả xuống những điều từng khiến tim mình nặng nề.<br/><br/>Mặt nước trong như trí nhớ, phản chiếu lại những điều chưa buông. Ở đây, không ai phán xét. Không cần cố quên, chỉ cần nhìn lại một lần cuối, rồi thả đi.<br/><br/>Khi bạn sẵn sàng, hãy viết điều mình tiếc nuối hoặc sợ bỏ lỡ… và thả nó xuống hồ. Mặt nước sẽ giữ lại, còn bạn thì bước tiếp.</p>
-      </details>
-    </section>
-  </main>
-
-  <div class="overlay" aria-hidden="false">
-    <div class="sheet card">
-      <h1>Chạm để vào hồ</h1>
-      <p class="lead">Nhấn nút bên dưới để mở nhạc nền và giọng dẫn (trình duyệt yêu cầu thao tác tay).</p>
-      <div class="controls">
-        <button class="primary startBtn">Bắt đầu lắng nghe</button>
-      </div>
-      <p class="small">Bạn có thể điều chỉnh âm lượng, tạm dừng nhạc hoặc nghe lại giọng sau khi vào.</p>
+      <div class="small">Âm thanh chỉ phát sau khi bạn bấm nút, theo chính sách của trình duyệt.</div>
     </div>
-  </div>
-
+  </main>
   <script src="./script.js"></script>
 </body>
 </html>
