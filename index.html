@@ -5,15 +5,48 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hồ Ký Ức</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <div class="bg" aria-hidden="true"></div>
-  <main class="center">
-    <h1>Chào mừng bạn đến với Hồ Ký Ức</h1>
-    <button>Bắt đầu hành trình</button>
+
+  <!-- Intro Center -->
+  <section class="center">
+    <div class="hero">
+      <h1>Chào mừng bạn đến với Hồ Ký Ức</h1>
+      <button class="startBtn">Bắt đầu hành trình</button>
+    </div>
+  </section>
+
+  <!-- Letter Form Section (hidden until start) -->
+  <main class="main">
+    <section class="panel">
+      <h2 style="margin:4px 0 12px">Viết điều bạn muốn thả xuống hồ</h2>
+      <form id="form">
+        <label for="letter">Lá thư</label>
+        <textarea id="letter" placeholder="Ví dụ: Mình tiếc vì..., mình sợ bỏ lỡ..."></textarea>
+
+        <div class="row" style="margin-top:8px">
+          <div style="flex:1;min-width:240px">
+            <label for="email">Email nhận thư phản chiếu (tùy chọn)</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <input type="checkbox" id="consent" checked />
+            <label for="consent" class="small">Mình đồng ý nhận email khi hệ thống được bật</label>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:12px">
+          <button type="submit">Thả xuống hồ</button>
+          <div class="small">Hiện lưu cục bộ để demo. Bước sau sẽ bật gửi email tự động.</div>
+        </div>
+      </form>
+    </section>
   </main>
+
+  <div class="toast"></div>
   <script src="./script.js"></script>
 </body>
 </html>
